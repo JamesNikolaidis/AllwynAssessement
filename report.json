@@ -1,0 +1,374 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2024-10-20T17:38:12.617Z",
+        "line": 3,
+        "name": "Check that the webpage returns all books",
+        "description": "",
+        "id": "book-test-suite;check-that-the-webpage-returns-all-books",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1309023700,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "the user requests all books",
+            "match": {
+              "location": "com.allwyn.dimitris_nikolaidis.assessment.tests.BooksStepDefintion.theUserRequestsAllBooks()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 172218100,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "the user validates that all books has been retrieved",
+            "match": {
+              "location": "com.allwyn.dimitris_nikolaidis.assessment.tests.BooksStepDefintion.theUserValidatesThatAllBooksHasBeenRetrieved()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-10-20T17:38:14.178Z",
+        "line": 7,
+        "name": "Check that the user can retrieve specific book",
+        "description": "",
+        "id": "book-test-suite;check-that-the-user-can-retrieve-specific-book",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 309480200,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "the user request for the book with id 1",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 38
+                }
+              ],
+              "location": "com.allwyn.dimitris_nikolaidis.assessment.tests.BooksStepDefintion.theUserRequestForTheBookWithId(int)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 336126900,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "the user validates that the retrieved book contains the correct data",
+            "match": {
+              "location": "com.allwyn.dimitris_nikolaidis.assessment.tests.BooksStepDefintion.theUserValidatesThatTheRetrievedBookContainsTheCorrectData()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-10-20T17:38:14.837Z",
+        "line": 11,
+        "name": "Check that a book can be deleted successfully",
+        "description": "",
+        "id": "book-test-suite;check-that-a-book-can-be-deleted-successfully",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 313224700,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "the user try to delete a book with id 1",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 38
+                }
+              ],
+              "location": "com.allwyn.dimitris_nikolaidis.assessment.tests.BooksStepDefintion.theUserTryToDeleteABookWithId(int)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "the user validates that the book does not exist",
+            "match": {
+              "location": "com.allwyn.dimitris_nikolaidis.assessment.tests.BooksStepDefintion.theUserValidatesThatTheBookDoesNotExist()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-10-20T17:38:15.162Z",
+        "line": 15,
+        "name": "the user creates a new book successfully",
+        "description": "",
+        "id": "book-test-suite;the-user-creates-a-new-book-successfully",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 301216200,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "the user try to create a new book with the following data",
+            "match": {
+              "location": "com.allwyn.dimitris_nikolaidis.assessment.tests.BooksStepDefintion.theUserTryToCreateANewBookWithTheFollowingData(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "id",
+                  "Title",
+                  "Description",
+                  "PageCount",
+                  "Excerpt",
+                  "PublishDate"
+                ]
+              },
+              {
+                "cells": [
+                  "10",
+                  "new Title",
+                  "new description",
+                  "400",
+                  "new",
+                  "2024-10-20T12:08:48.537Z"
+                ]
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 8011000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "the user validates that the book has been created",
+            "match": {
+              "location": "com.allwyn.dimitris_nikolaidis.assessment.tests.BooksStepDefintion.theUserValidatesThatTheBookHasBeenCreated()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-10-20T17:38:15.481Z",
+        "line": 21,
+        "name": "Check that the user can update an existing book",
+        "description": "",
+        "id": "book-test-suite;check-that-the-user-can-update-an-existing-book",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 323898400,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "the user try to update the book with id 10 with the following data",
+            "match": {
+              "arguments": [
+                {
+                  "val": "10",
+                  "offset": 40
+                }
+              ],
+              "location": "com.allwyn.dimitris_nikolaidis.assessment.tests.BooksStepDefintion.theUserTryToUpdateTheBookWithIdWithTheFollowingData(int,io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Title",
+                  "Description",
+                  "PageCount",
+                  "Excerpt",
+                  "PublishDate"
+                ]
+              },
+              {
+                "cells": [
+                  "updated Title",
+                  "updated description",
+                  "400",
+                  "updated",
+                  "2024-10-20T12:08:48.537Z"
+                ]
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 7012500,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "the user validates that the book has been updated",
+            "match": {
+              "location": "com.allwyn.dimitris_nikolaidis.assessment.tests.BooksStepDefintion.theUserValidatesThatTheBookHasBeenUpdated()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-10-20T17:38:15.820Z",
+        "line": 28,
+        "name": "Check that the user cant retrieve specific book when provide invalid id",
+        "description": "",
+        "id": "book-test-suite;check-that-the-user-cant-retrieve-specific-book-when-provide-invalid-id",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 326688700,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "the user request for the book with invalid id",
+            "match": {
+              "location": "com.allwyn.dimitris_nikolaidis.assessment.tests.BooksStepDefintion.theUserRequestForTheBookWithInvalidId()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "the user validates that the application returns not found response",
+            "match": {
+              "location": "com.allwyn.dimitris_nikolaidis.assessment.tests.BooksStepDefintion.theUserValidatesThatTheApplicationReturnsNotFoundResponse()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-10-20T17:38:16.154Z",
+        "line": 33,
+        "name": "Check that a book cant retrieve specific book when provide invalid id",
+        "description": "",
+        "id": "book-test-suite;check-that-a-book-cant-retrieve-specific-book-when-provide-invalid-id",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 283193600,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "the user try to delete a book with invalid id",
+            "match": {
+              "location": "com.allwyn.dimitris_nikolaidis.assessment.tests.BooksStepDefintion.theUserTryToDeleteABookWithInvalidId()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.IllegalArgumentException: [Assertion failed] - this expression must be true\r\n\tat org.springframework.util.Assert.isTrue(Assert.java:121)\r\n\tat org.springframework.util.Assert.isTrue(Assert.java:150)\r\n\tat com.allwyn.dimitris_nikolaidis.assessment.tests.BooksStepDefintion.theUserValidatesThatTheApplicationReturnsNotFoundResponse(BooksStepDefintion.java:119)\r\n\tat ✽.the user validates that the application returns not found response(file:///C:/Users/Dimit/Desktop/Allwtn/dimitris_nikolaidis.assessment/dimitris_nikolaidis.assessment/src/main/resources/features/books.feature:35)\r\n",
+              "duration": 1029200,
+              "status": "failed"
+            },
+            "line": 35,
+            "name": "the user validates that the application returns not found response",
+            "match": {
+              "location": "com.allwyn.dimitris_nikolaidis.assessment.tests.BooksStepDefintion.theUserValidatesThatTheApplicationReturnsNotFoundResponse()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-10-20T17:38:16.454Z",
+        "line": 37,
+        "name": "the user cant create a new book with invalid data",
+        "description": "",
+        "id": "book-test-suite;the-user-cant-create-a-new-book-with-invalid-data",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 298507200,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "the user try to create a new book with the following data",
+            "match": {
+              "location": "com.allwyn.dimitris_nikolaidis.assessment.tests.BooksStepDefintion.theUserTryToCreateANewBookWithTheFollowingData(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "id",
+                  "Title",
+                  "Description",
+                  "PageCount",
+                  "Excerpt",
+                  "PublishDate"
+                ]
+              },
+              {
+                "cells": [
+                  "-1",
+                  "new Title",
+                  "new description",
+                  "-1",
+                  "new",
+                  "1"
+                ]
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.IllegalArgumentException: [Assertion failed] - this expression must be true\r\n\tat org.springframework.util.Assert.isTrue(Assert.java:121)\r\n\tat org.springframework.util.Assert.isTrue(Assert.java:150)\r\n\tat com.allwyn.dimitris_nikolaidis.assessment.tests.BooksStepDefintion.theUserValidatesThatTheApplicationReturnsInvalidRequest(BooksStepDefintion.java:124)\r\n\tat ✽.the user validates that the application returns invalid request(file:///C:/Users/Dimit/Desktop/Allwtn/dimitris_nikolaidis.assessment/dimitris_nikolaidis.assessment/src/main/resources/features/books.feature:41)\r\n",
+              "status": "failed"
+            },
+            "line": 41,
+            "name": "the user validates that the application returns invalid request",
+            "match": {
+              "location": "com.allwyn.dimitris_nikolaidis.assessment.tests.BooksStepDefintion.theUserValidatesThatTheApplicationReturnsInvalidRequest()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Book test suite",
+    "description": "",
+    "id": "book-test-suite",
+    "keyword": "Feature",
+    "uri": "file:src/main/resources/features/books.feature",
+    "tags": []
+  }
+]
