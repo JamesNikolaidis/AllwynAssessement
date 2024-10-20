@@ -20,7 +20,7 @@ pipeline {
         }
 
         stage("Test Execution") {
-           git 'https://github.com/jenkinsci/git-plugin'
+           git 'https://github.com/JamesNikolaidis/AllwynAssessement.git'
            sh 'mvn clean test'
         }
     }
