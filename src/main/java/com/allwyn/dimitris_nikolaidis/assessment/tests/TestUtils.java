@@ -13,17 +13,4 @@ public class TestUtils {
 
     @Autowired
     protected RestHelper restHelper;
-
-
-    public String getFile(String fileName) {
-        ClassLoader classLoader = getClass().getClassLoader();
-        FileInputStream inputStream = null;
-        try {
-            inputStream = new FileInputStream(classLoader.getResource(fileName).getFile());
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        }
-        String data = IOUtils.toString(inputStream, StandardCharsets.UTF_8);
-        return data;
-    }
 }
